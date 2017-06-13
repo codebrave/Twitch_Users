@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="This displays the status of Twitch users online"/>
+    <meta name="keywords" content="twitch, users, user, twitch users"/>
+    <meta name="robots" content="index/follow"/>
+    <meta name="author" content="Jonalbert Encina"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="twitch.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="twitch.css"/>
+    
+    <title>Twitch FreeCodeCamp Following Users</title>
+  
+  </head>
+  <body>
+  <!--Create a Boostrap container-->
+  <div class="container">
+    <!--The heading of the website-->
+    <h1 class="text-center heading">
+    Free Code Camp
+    </h1>
+    <!--This is for telling the online status
+        of Free Code Camp in Twitch.-->
+    <h2 class="text-center heading"id="fstatus">
+    </h2>
+    <!--Create a Bootstrap row with 3 of xs 4 
+        columns for the logo, user name, and 
+        online status.-->
+    <div class="row text-center font">
+      <div class="col-xs-4">
+        <h2>Logo
+        </h2>
+      </div>
+      <div class="col-xs-4">
+        <h2>Twitch User Name
+        </h2>
+      </div>  
+      <div class="col-xs-4">
+        <h2>Status
+        </h2>  
+      </div>
+    </div> <!--end of row--> 
+    <!--Create a Bootstrap row for displaying
+        boxes of logos and online statuses for
+        each Twitch user name.-->
+    <div class="row text-center img-responsive" id="info">
+    </div>
+  </div> <!-- end of container-->
+  </body>
+</html>
